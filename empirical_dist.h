@@ -39,6 +39,7 @@ public:
 	void save(std::ofstream& file) override;
 	/* Функция для загрузки параметров эмпирического рапределения из файла */
 	void load(std::ifstream& file) override;
+	/* Функция для сохранения данных в файл для построения графика плостности эмпирического распределения */
 	void saveDataGraph(const std::vector<double> selection, std::ofstream& file) const override;
 	~EmpiricalDistribution();
 

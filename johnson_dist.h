@@ -40,6 +40,7 @@ public:
 	void save(std::ofstream& file) override;
 	/* Функция для загрузки параметров рапределения Джонсона из файла */
 	void load(std::ifstream& file) override;
+	/* Функция для сохранения данных в файл для построения графика плостности распределения Джонсона */
 	void saveDataGraph(const std::vector<double> selection, std::ofstream& file) const override;
 	~JohnsonDistribution() {};
 
